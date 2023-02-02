@@ -1,0 +1,271 @@
+model:LSTM
+task:snips
+crf:False
+dropout:True
+runs:1
+device:cuda
+train_batch_size:128
+eval_batch_size:64
+hid_size:200
+n_layer:1
+emb_size:300
+epochs:50
+patience:3
+learning_rate:0.0001
+max_grad_norm:5
+dropout_rate:0.1
+Train samples len:13084
+Test samples len:700
+len intent labels: 7
+len slot labels:  72
+vocab len: 10621
+Epoch: 1
+Average validation loss: 5.649606891300367
+Average train loss: 6.019591598720341
+Intent Accuracy: 0.7180555555555556
+Epoch: 2
+Average validation loss: 4.031995265380196
+Average train loss: 4.786753326981932
+Intent Accuracy: 0.7347222222222223
+Slot F1(dev): 0
+Epoch: 3
+Average validation loss: 3.4187311918839165
+Average train loss: 3.6967878263075273
+Intent Accuracy: 0.7916666666666666
+Slot F1(dev): 0.0021511158913686476
+Epoch: 4
+Average validation loss: 2.9513533115386963
+Average train loss: 3.158619456238799
+Intent Accuracy: 0.8826388888888889
+Slot F1(dev): 0.05259087393658159
+Epoch: 5
+Average validation loss: 2.5650919416676397
+Average train loss: 2.719688289768093
+Intent Accuracy: 0.9270833333333334
+Slot F1(dev): 0.1335095836087244
+Epoch: 6
+Average validation loss: 2.2538622876872187
+Average train loss: 2.360722224790971
+Intent Accuracy: 0.9375
+Slot F1(dev): 0.2071185157137448
+Epoch: 7
+Average validation loss: 2.0028480706007583
+Average train loss: 2.0697865735043535
+Intent Accuracy: 0.9493055555555555
+Slot F1(dev): 0.27442258340461934
+Epoch: 8
+Average validation loss: 1.797086503194726
+Average train loss: 1.8333550757104224
+Intent Accuracy: 0.9493055555555555
+Slot F1(dev): 0.3343969368219528
+Epoch: 9
+Average validation loss: 1.6258241663808408
+Average train loss: 1.636954556454669
+Intent Accuracy: 0.9527777777777777
+Slot F1(dev): 0.3877949797084022
+Epoch: 10
+Average validation loss: 1.4829106849172842
+Average train loss: 1.4727175930044154
+Intent Accuracy: 0.9555555555555556
+Slot F1(dev): 0.4180386542591267
+Epoch: 11
+Average validation loss: 1.3653678894042969
+Average train loss: 1.337272862811665
+Intent Accuracy: 0.9590277777777778
+Slot F1(dev): 0.44170248163038955
+Epoch: 12
+Average validation loss: 1.265004427536674
+Average train loss: 1.2218031608141386
+Intent Accuracy: 0.9611111111111111
+Slot F1(dev): 0.471864406779661
+Epoch: 13
+Average validation loss: 1.1812391851259314
+Average train loss: 1.1244745640964298
+Intent Accuracy: 0.9618055555555556
+Slot F1(dev): 0.5054739652870495
+Epoch: 14
+Average validation loss: 1.106886731541675
+Average train loss: 1.0410509816892854
+Intent Accuracy: 0.9631944444444445
+Slot F1(dev): 0.5329452236041281
+Epoch: 15
+Average validation loss: 1.042068079761837
+Average train loss: 0.9691898744184893
+Intent Accuracy: 0.9645833333333333
+Slot F1(dev): 0.5553219448094613
+Epoch: 16
+Average validation loss: 0.9853055891783341
+Average train loss: 0.90356222482828
+Intent Accuracy: 0.9652777777777778
+Slot F1(dev): 0.5675463809772668
+Epoch: 17
+Average validation loss: 0.934816168702167
+Average train loss: 0.8461836851560153
+Intent Accuracy: 0.9659722222222222
+Slot F1(dev): 0.5891553701772679
+Epoch: 18
+Average validation loss: 0.8902324049369149
+Average train loss: 0.7949101145450885
+Intent Accuracy: 0.9673611111111111
+Slot F1(dev): 0.6041368544295563
+Epoch: 19
+Average validation loss: 0.8494153489237246
+Average train loss: 0.7478755149212513
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.6186528497409327
+Epoch: 20
+Average validation loss: 0.8139908443326536
+Average train loss: 0.7064757281607323
+Intent Accuracy: 0.96875
+Slot F1(dev): 0.6314836373043591
+Epoch: 21
+Average validation loss: 0.7803964563038038
+Average train loss: 0.6676878608190097
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.6444358278402481
+Epoch: 22
+Average validation loss: 0.7486989368563113
+Average train loss: 0.6317708053431668
+Intent Accuracy: 0.96875
+Slot F1(dev): 0.6542779713511421
+Epoch: 23
+Average validation loss: 0.7224348265191783
+Average train loss: 0.5987122936563177
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.6592897581060216
+Epoch: 24
+Average validation loss: 0.6952056185058926
+Average train loss: 0.5689383175346877
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.6680359435173299
+Epoch: 25
+Average validation loss: 0.6714156982691392
+Average train loss: 0.5407222031237005
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.6732394366197184
+Epoch: 26
+Average validation loss: 0.6493365557297416
+Average train loss: 0.5143900048601758
+Intent Accuracy: 0.96875
+Slot F1(dev): 0.6822896657702651
+Epoch: 27
+Average validation loss: 0.6299237064693285
+Average train loss: 0.49006112263752866
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.6871479774705581
+Epoch: 28
+Average validation loss: 0.6107285346673883
+Average train loss: 0.46698343655565283
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.6946721311475409
+Epoch: 29
+Average validation loss: 0.5935638611731322
+Average train loss: 0.44590100482269956
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.6986406770966915
+Epoch: 30
+Average validation loss: 0.5801800048869589
+Average train loss: 0.42584591448962034
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.7069075996411636
+Epoch: 31
+Average validation loss: 0.5620306989421016
+Average train loss: 0.4071511993041405
+Intent Accuracy: 0.9722222222222222
+Slot F1(dev): 0.711738293778063
+Epoch: 32
+Average validation loss: 0.5478034200875656
+Average train loss: 0.39018838844456516
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.7193432529502308
+Epoch: 33
+Average validation loss: 0.5356621146202087
+Average train loss: 0.37288640979882126
+Intent Accuracy: 0.9715277777777778
+Slot F1(dev): 0.7229348383786557
+Epoch: 34
+Average validation loss: 0.5249824472095656
+Average train loss: 0.3573744087428837
+Intent Accuracy: 0.9722222222222222
+Slot F1(dev): 0.7292121835239685
+Epoch: 35
+Average validation loss: 0.5093516396439594
+Average train loss: 0.34278922421591623
+Intent Accuracy: 0.9708333333333333
+Slot F1(dev): 0.7347725520431766
+Epoch: 36
+Average validation loss: 0.5031169860259347
+Average train loss: 0.32892443452562603
+Intent Accuracy: 0.9708333333333333
+Slot F1(dev): 0.7386436752026767
+Epoch: 37
+Average validation loss: 0.49388122688169067
+Average train loss: 0.31535560056403444
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.7437483887599897
+Epoch: 38
+Average validation loss: 0.4842032245967699
+Average train loss: 0.30246760147613483
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.7478081485301701
+Epoch: 39
+Average validation loss: 0.47437323046767194
+Average train loss: 0.2905036959346834
+Intent Accuracy: 0.9708333333333333
+Slot F1(dev): 0.7511603919546158
+Epoch: 40
+Average validation loss: 0.4663378907286603
+Average train loss: 0.2796257462475326
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.7576500968366687
+Epoch: 41
+Average validation loss: 0.4591172713300456
+Average train loss: 0.2688192332183922
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.7625694713713326
+Epoch: 42
+Average validation loss: 0.4514745059220687
+Average train loss: 0.25850696108498417
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.7660069848661234
+Epoch: 43
+Average validation loss: 0.44348639249801636
+Average train loss: 0.2483858795283915
+Intent Accuracy: 0.9715277777777778
+Slot F1(dev): 0.7695894314208005
+Epoch: 44
+Average validation loss: 0.43782600112583325
+Average train loss: 0.23963918659713243
+Intent Accuracy: 0.9708333333333333
+Slot F1(dev): 0.7731985484707101
+Epoch: 45
+Average validation loss: 0.43065469550049823
+Average train loss: 0.2299688758103402
+Intent Accuracy: 0.9715277777777778
+Slot F1(dev): 0.7784120394395433
+Epoch: 46
+Average validation loss: 0.42805761034074036
+Average train loss: 0.22160343138071206
+Intent Accuracy: 0.9694444444444444
+Slot F1(dev): 0.7834221125113681
+Epoch: 47
+Average validation loss: 0.4213900669761326
+Average train loss: 0.21349644251577146
+Intent Accuracy: 0.9715277777777778
+Slot F1(dev): 0.7861046057767369
+Epoch: 48
+Average validation loss: 0.4154341311558433
+Average train loss: 0.20595914862313114
+Intent Accuracy: 0.9722222222222222
+Slot F1(dev): 0.7900078064012489
+Epoch: 49
+Average validation loss: 0.4095105632491734
+Average train loss: 0.19849309259718592
+Intent Accuracy: 0.9701388888888889
+Slot F1(dev): 0.7919375812743823
+Best f1 score during training: 0.7919375812743823
+//////////////////////////////
+Final test results: 
+Average test loss: 0.43773110888221045
+Intent Accuracy(test): 0.9614285714285714
+Slot F1(test): 0.7676282051282052

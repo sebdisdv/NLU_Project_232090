@@ -1,0 +1,41 @@
+model:JOINTBERT
+task:atis
+crf:False
+dropout:True
+runs:1
+device:cuda
+pad_label: PAD
+unk_label: UNK
+max_seq_len: 50
+train_batch_size: 64
+eval_batch_size: 64
+epochs: 3
+learning_rate: 5e-05
+adam_epsilon: 1e-08
+max_grad_norm: 1.0
+dropout_rate: 0.1
+Train samples len:4978
+Test samples len:893
+len intent labels: 27
+len slot labels:  131
+Epoch: 0
+Average validation loss: 0.6525422692298889
+Average train loss: 2.158820038256438
+Intent Accuracy: 0.9279731993299832
+Slot F1(dev): 0.8589548452562152
+Epoch: 1
+Average validation loss: 0.3260256007313728
+Average train loss: 0.4766935542009879
+Intent Accuracy: 0.9597989949748744
+Slot F1(dev): 0.9243107769423557
+Epoch: 2
+Average validation loss: 0.2007233001291752
+Average train loss: 0.23592041411261627
+Intent Accuracy: 0.983249581239531
+Slot F1(dev): 0.9528795811518324
+Best f1 score during training: 0.9528795811518324
+//////////////////////////////
+Final test results: 
+Average test loss: 0.4383612174008574
+Intent Accuracy(test): 0.961926091825308
+Slot F1(test): 0.9305093646070366

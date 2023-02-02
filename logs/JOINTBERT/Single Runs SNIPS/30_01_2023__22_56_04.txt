@@ -1,0 +1,42 @@
+crf:True
+device:cuda
+dropout:True
+model:JOINTBERT
+runs:1
+task:snips
+pad_label: PAD
+unk_label: UNK
+max_seq_len: 50
+train_batch_size: 32
+eval_batch_size: 64
+epochs: 5
+learning_rate: 5e-05
+adam_epsilon: 1e-08
+max_grad_norm: 1.0
+dropout_rate: 0.1
+Train samples len:13084
+Test samples len:700
+len intent labels: 8
+len slot labels:  74
+Epoch: 1
+Average validation loss: 1.2075788404630579
+Average train loss: 6.424823786858674
+Intent Accuracy: 0.9868055555555556
+Epoch: 2
+Average validation loss: 0.9848165097443954
+Average train loss: 0.9544836519756815
+Intent Accuracy: 0.9881944444444445
+Epoch: 3
+Average validation loss: 0.9214076140652532
+Average train loss: 0.5396585410030988
+Intent Accuracy: 0.9902777777777778
+Epoch: 4
+Average validation loss: 1.1763766602329586
+Average train loss: 0.3405500138280811
+Intent Accuracy: 0.9909722222222223
+Best f1 score during training: 0
+//////////////////////////////
+Final test results: 
+Average test loss: 1.4213986965742977
+Intent Accuracy(test): 0.9828571428571429
+Slot F1(test): 0.9714223457523163555511
